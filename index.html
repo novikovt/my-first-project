@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьный проект</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background: #2c3e50;
+            position: fixed;
+            padding-top: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            text-align: center;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background: #34495e;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        header, footer {
+            background: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery-container img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <header>
+            <h1>Добро пожаловать на мой сайт!</h1>
+        </header>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Этот сайт создан в рамках школьного проекта.</p>
+        </section>
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery-container">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.rskwY68v-N0YVlNdVaUnDAHaFS&pid=Api" alt="Школьная обложка">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.FTmPkFOEez3cWyIubHfgFQHaFP&pid=Api" alt="Школьные картинки">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.57_gakP77NEEnXyceyNi9QHaFj&pid=Api" alt="Школьная тетрадь">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.0g65vsRILHncQX0slbpOEQHaHa&pid=Api" alt="Библиотека">
+            </div>
+        </section>
+        <section id="contact">
+            <h2 id="contact">Контакты</h2>
+        <p>Свяжитесь с нами: <br>Email: qwerty123@mail.com <br>Телефон: +7 123 456 78 90</p>
+        </section>
+        <footer>
+            <p>&copy; 2025 Новиков Александр</p>
+        </footer>
+    </div>
+</body>
+</html>
